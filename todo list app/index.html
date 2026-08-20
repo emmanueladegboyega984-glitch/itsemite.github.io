@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: hsl(0, 0%, 50%);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: aquamarine;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        main{
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        header .input_container{
+            width: auto;
+        }
+
+        header input{
+            padding: 5px 10px;
+            width: 85%;
+        }
+        header button{
+            padding: 5px 10px;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="input_container">
+            <input type="text">
+            <button type="submit">Add</button>
+        </div>
+    </header>
+    <main class="list_cont">
+        <div class="task_card">
+            <input type="text" disabled>
+            <button>delete</button>
+        </div>
+        <div class="task_card">
+            <input type="text" disabled>
+            <button>delete</button>
+        </div>
+        <div class="task_card">
+            <input type="text" disabled>
+            <button>delete</button>
+        </div>
+        <div class="task_card">
+            <input type="text" disabled>
+            <button>delete</button>
+        </div>
+    </main>
+</body>
+</html>
